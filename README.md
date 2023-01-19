@@ -1,7 +1,6 @@
 Automatizacion con karate framework
 
+comandos para ejecutar el proyecto:
 
-
-
-
-% mvn clean test -Dkarate.options="--tags @auth" -Ddriver=karate
+mvn install
+mvn clean test -Dkarate.options="--tags @todo" -Ddriver=karate

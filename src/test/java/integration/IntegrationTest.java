@@ -9,7 +9,7 @@ class IntegrationTest {
 	
     @Test
     void testParallel() {
-        Results results = Runner.path("classpath:integration").parallel(5);
+        Results results = Runner.path("classpath:integration").parallel(1);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
         
         // mvn test -Dkarate.options="--tags @operaciones"
